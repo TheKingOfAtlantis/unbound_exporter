@@ -329,13 +329,13 @@ var (
 			"The number of queries answered  from  auth-zone  data",
 			prometheus.GaugeValue,
 			[]string{"direction"},
-			"^num\\.query\\.authzone\\.(\w+)$"),
+			"^num\\.query\\.authzone\\.(\\w+)$"),
 		newUnboundMetric(
 			"query_aggressive_total",
 			"The number of queries answered using cached NSEC records with NODATA RCODE",
 			prometheus.GaugeValue,
 			[]string{"type"},
-			"^num\\.query\\.aggressive\\.(\w+)$"),
+			"^num\\.query\\.aggressive\\.(\\w+)$"),
 		newUnboundMetric(
 			"cache_subnet_total",
 			"Number  of queries that got an answer that contained EDNS client subnet data.",
