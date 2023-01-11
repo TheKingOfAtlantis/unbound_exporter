@@ -321,20 +321,20 @@ var (
 			"cache_count",
 			"The number of items in cached",
 			prometheus.GaugeValue,
-			string[]{"type"},
+			[]string{"type"},
 			"^(\\w+)\\.cache\\.count$"),
 
 		newUnboundMetric(
 			"query_authzone_total",
 			"The number of queries answered  from  auth-zone  data",
 			prometheus.GaugeValue,
-			string[]{"direction"},
+			[]string{"direction"},
 			"^num\\.query\\.authzone\\.(\w+)$"),
 		newUnboundMetric(
 			"query_aggressive_total",
 			"The number of queries answered using cached NSEC records with NODATA RCODE",
 			prometheus.GaugeValue,
-			string[]{"type"},
+			[]string{"type"},
 			"^num\\.query\\.aggressive\\.(\w+)$"),
 		newUnboundMetric(
 			"cache_subnet_total",
@@ -353,7 +353,7 @@ var (
 			"query_rpz_total",
 			"Number of queries answered using configured RPZ policy",
 			prometheus.GaugeValue,
-			string[]{"action"},
+			[]string{"action"},
 			"^num\\.rpz\\.action\\.(\\w+)"),
 
 		newUnboundMetric(
