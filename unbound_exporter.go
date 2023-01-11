@@ -273,6 +273,18 @@ var (
 			prometheus.GaugeValue,
 			nil,
 			"^rrset\\.cache\\.count$"),
+		newUnboundMetric(
+			"infra_cache_count",
+			"The Number of infra cached",
+			prometheus.GaugeValue,
+			nil,
+			"^infra\\.cache\\.count$"),
+		newUnboundMetric(
+			"key_cache_count",
+			"The Number of keys cached",
+			prometheus.GaugeValue,
+			nil,
+			"^key\\.cache\\.count$"),
 	}
 )
 
