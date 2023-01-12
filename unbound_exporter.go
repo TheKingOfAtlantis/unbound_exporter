@@ -183,7 +183,7 @@ var (
 			"Memory in bytes by the TCP and TLS stream wait buffers.",
 			prometheus.GaugeValue,
 			[]string{"module"},
-			"^mem\\.mod\\.(\\w+)$"),
+			"^mem\\.streamwait$"),
 		newUnboundMetric(
 			"memory_http_bytes",
 			"Memory  in bytes used by the HTTP/2 buffers.",
